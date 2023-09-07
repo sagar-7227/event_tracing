@@ -1,0 +1,110 @@
+
+oops.o:     file format elf64-x86-64
+
+
+Disassembly of section .text:
+
+0000000000000000 <__pfx_create_oops>:
+   0:	90                   	nop
+   1:	90                   	nop
+   2:	90                   	nop
+   3:	90                   	nop
+   4:	90                   	nop
+   5:	90                   	nop
+   6:	90                   	nop
+   7:	90                   	nop
+   8:	90                   	nop
+   9:	90                   	nop
+   a:	90                   	nop
+   b:	90                   	nop
+   c:	90                   	nop
+   d:	90                   	nop
+   e:	90                   	nop
+   f:	90                   	nop
+
+0000000000000010 <create_oops>:
+  10:	e8 00 00 00 00       	call   15 <create_oops+0x5>
+			11: R_X86_64_PLT32	__fentry__-0x4
+  15:	55                   	push   %rbp
+  16:	c7 04 25 00 00 00 00 	movl   $0x0,0x0
+  1d:	00 00 00 00 
+  21:	48 89 e5             	mov    %rsp,%rbp
+  24:	5d                   	pop    %rbp
+  25:	e9 00 00 00 00       	jmp    2a <create_oops+0x1a>
+			26: R_X86_64_PLT32	__x86_return_thunk-0x4
+  2a:	66 0f 1f 44 00 00    	nopw   0x0(%rax,%rax,1)
+
+0000000000000030 <__pfx_cleanup_module>:
+  30:	90                   	nop
+  31:	90                   	nop
+  32:	90                   	nop
+  33:	90                   	nop
+  34:	90                   	nop
+  35:	90                   	nop
+  36:	90                   	nop
+  37:	90                   	nop
+  38:	90                   	nop
+  39:	90                   	nop
+  3a:	90                   	nop
+  3b:	90                   	nop
+  3c:	90                   	nop
+  3d:	90                   	nop
+  3e:	90                   	nop
+  3f:	90                   	nop
+
+0000000000000040 <cleanup_module>:
+  40:	e8 00 00 00 00       	call   45 <cleanup_module+0x5>
+			41: R_X86_64_PLT32	__fentry__-0x4
+  45:	55                   	push   %rbp
+  46:	48 89 e5             	mov    %rsp,%rbp
+  49:	5d                   	pop    %rbp
+  4a:	e9 00 00 00 00       	jmp    4f <cleanup_module+0xf>
+			4b: R_X86_64_PLT32	__x86_return_thunk-0x4
+
+Disassembly of section .init.text:
+
+0000000000000000 <__pfx_my_oops_init>:
+   0:	90                   	nop
+   1:	90                   	nop
+   2:	90                   	nop
+   3:	90                   	nop
+   4:	90                   	nop
+   5:	90                   	nop
+   6:	90                   	nop
+   7:	90                   	nop
+   8:	90                   	nop
+   9:	90                   	nop
+   a:	90                   	nop
+   b:	90                   	nop
+   c:	90                   	nop
+   d:	90                   	nop
+   e:	90                   	nop
+   f:	90                   	nop
+
+0000000000000010 <my_oops_init>:
+  10:	e8 00 00 00 00       	call   15 <my_oops_init+0x5>
+			11: R_X86_64_PLT32	__fentry__-0x4
+  15:	66 90                	xchg   %ax,%ax
+  17:	c7 04 25 00 00 00 00 	movl   $0x0,0x0
+  1e:	00 00 00 00 
+  22:	31 c0                	xor    %eax,%eax
+  24:	31 f6                	xor    %esi,%esi
+  26:	31 ff                	xor    %edi,%edi
+  28:	e9 00 00 00 00       	jmp    2d <my_oops_init+0x1d>
+			29: R_X86_64_PLT32	__x86_return_thunk-0x4
+  2d:	55                   	push   %rbp
+  2e:	48 c7 c6 00 00 00 00 	mov    $0x0,%rsi
+			31: R_X86_64_32S	.rodata.str1.1
+  35:	48 c7 c7 00 00 00 00 	mov    $0x0,%rdi
+			38: R_X86_64_32S	__dyndbg
+  3c:	48 89 e5             	mov    %rsp,%rbp
+  3f:	e8 00 00 00 00       	call   44 <my_oops_init+0x34>
+			40: R_X86_64_PLT32	__dynamic_pr_debug-0x4
+  44:	31 c0                	xor    %eax,%eax
+  46:	c7 04 25 00 00 00 00 	movl   $0x0,0x0
+  4d:	00 00 00 00 
+  51:	5d                   	pop    %rbp
+  52:	31 f6                	xor    %esi,%esi
+  54:	31 ff                	xor    %edi,%edi
+  56:	e9 00 00 00 00       	jmp    5b <cleanup_module+0x1b>
+			57: R_X86_64_PLT32	__x86_return_thunk-0x4
